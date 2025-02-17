@@ -8,15 +8,16 @@ function onlyA(arr, a) {
     let empty = [];
     for (let i = 0; i < arr.length; i++) {
         const element = arr[i];
-        element.startsWith('A')
-        empty.push(a);
+        if (element.startsWith(a)) {
+            empty.push(element);
+        }
     }
     return empty
 }
 
 // Invoca la funzione qui e stampa il risultato in console
 onlyA(names)
-console.log(onlyA(names));
+console.log(onlyA(names, 'A'));
 
 
 
