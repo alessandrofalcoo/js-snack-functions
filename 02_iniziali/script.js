@@ -5,12 +5,14 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 // Dichiara la funzione qui.
 function initials(arr) {
+    let empty = [];
     for (let i = 0; i < arr.length; i++) {
-        const element = arr[i]        
+        const element = arr[i]
         let first = element.charAt(0);
-        first.split().push(arr);
-        
+        empty.push(first);
+
     }
+    return empty
 }
 
 // Invoca la funzione qui e stampa il risultato in console

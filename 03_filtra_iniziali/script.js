@@ -4,7 +4,14 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-
+function onlyA (arr, a) {
+    let empty = [];
+    for (let i = 0; i < arr.length; i++) {
+        const element = arr[i];
+        
+    }
+    return empty
+}
 
 // Invoca la funzione qui e stampa il risultato in console
 
