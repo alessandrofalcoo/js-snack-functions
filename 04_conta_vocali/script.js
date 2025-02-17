@@ -5,15 +5,17 @@ const word = 'javascript';
 
 // Dichiara la funzione qui.
 function FindVowels(str) {
-    let newWord = ""
+    let count = 0;
+    let onlyVowels = []
     let vowel = ['a', 'e', 'i', 'o', 'u']
     for (let i = 0; i < str.length; i++) {
         const element = str[i];
-        if (element.includes(vowel)) {
-            vowel.push(str)
+        if (vowel.includes(element)) {
+            count++
+            onlyVowels.push(element)
         }
     }
-    return newWord
+    return onlyVowels
 }
 
 // Invoca la funzione qui e stampa il risultato in console
